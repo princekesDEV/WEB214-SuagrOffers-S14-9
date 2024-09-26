@@ -1,0 +1,64 @@
+@media screen and (max-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header > h1 {
+  margin: 20px 30px;
+}
+
+#header > div {
+  background-color: #fc2779;
+  width: 60px;
+  height: 2px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.cards > div > img {
+  width: 100%;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.cards > div {
+  text-align: right;
+  padding: 10px;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 15px;
+}
+
+.deal-text {
+  display: inline-flex;
+  align-items: center;
+  border: 2px dashed #fc2779;
+  border-radius: 8px;
+  color: #fc2779;
+}
+
+.deal-text > div:first-child {
+  font-weight: bold;
+  padding: 5px 10px 5px 10px;
+  border-right: 2px dashed #fc2779;
+}
+
+.deal-text > div:nth-child(2) {
+  padding: 5px 10px 5px 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
